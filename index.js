@@ -19,7 +19,26 @@ var flag = false;
 hideBtn.addEventListener("click",()=>{
     flag=!flag;
     if(flag)
-        badge.style.display = "none" 
+        {
+            badge.style.display = "none" ;
+        }
     else
-        badge.style.display="inline";    
+     {
+       
+        badge.style.display="inline";  
+     }  
+})
+
+
+// baseline snack bars
+
+const snackBar = document.querySelector(".snack-bar")
+const baselineSnackBar = document.querySelector(".baseline")
+snackBar.addEventListener("click",()=>{
+    baselineSnackBar.style.display = "block"
+})
+const cutButton = document.querySelector(".cut")
+console.log(cutButton)
+cutButton.addEventListener("click",()=>{
+    baselineSnackBar.style.display = "none"
 })

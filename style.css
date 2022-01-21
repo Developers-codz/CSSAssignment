@@ -325,6 +325,55 @@ ul{
     left:50px;
 
 }
+/* -----------snack bars-------------- */
+.overlay{
+    z-index:99;
+}
+
+.simple-snack-bar{
+    background: var(--grey);
+    padding:1rem;
+    border-radius: 10px;
+    color:var(--light-grey);
+    box-shadow: -2px 4px 5px 0px rgba(0,0,0,0.75);
+
+}
+.simple-snack-bar>p>button{
+    background: none;
+    font-size: 1.3rem;
+    color:lightgreen;
+    
+}
+
+.tooltip{
+    position: relative;
+    border-radius: 50%;
+}
+.tooltip .tooltip-text{
+    position:absolute;
+    visibility: hidden;
+    color:var(--off-white);
+    top:40px;
+    left:-5px;
+    font-size: small;
+}
+.tooltip:hover{
+    background-color: var(--light-grey);
+}
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+    
+}
+
+.snack-bar{
+    position:relative;
+}
+.baseline{
+    display: none;
+    position:absolute;
+    bottom:0
+}
+
 
 
 
