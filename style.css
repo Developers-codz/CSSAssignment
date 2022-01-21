@@ -24,8 +24,7 @@ body{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center; 
     background-color:var(--light-grey) ;
     
 }
@@ -94,6 +93,7 @@ button{
 }
 button:hover{
     background-color: var(--light-grey);
+    cursor: pointer;
     
 }
 .icon-btn{
@@ -201,4 +201,130 @@ ul{
     color:var(--blue);
     background-color: var(--light-grey);
 }
+
+/* ---------headers--------- */
+
+/* using grids */
+
+.long-nav{
+    width:600px;
+    padding:1rem;
+    background-color: var(--off-white);
+    display:grid;
+    grid-template-areas:
+    "button place place place ------ ------ ----- icons icons icons";
+    
+    
+}
+
+
+@media only screen and(max-width:500px){
+    
+    .long-nav{
+        
+        grid-template-areas:
+        "button place"
+        "-----  icons";
+    }
+}
+
+.long-nav>button{
+    grid-area: button;
+}
+
+.long-nav>h2{
+    grid-area: place;
+    margin-top:.3rem;
+    margin-left: 1rem;
+}
+.right-panel{
+    grid-area:icons;
+    margin-left: auto;   
+}
+
+
+/* -----short nav------ */
+
+.short-nav{
+    display:grid;
+    width:150px;
+    border-bottom-right-radius:20px ;
+    background: var(--blue);
+    grid-template-areas: "hamburger download";
+    padding:1rem .2rem;
+}
+.short-nav > button{
+    background: var(--blue);
+    color:white;
+    margin-right:auto;
+}
+.short-nav > button:hover{
+  background: #8d4fe2b9;
+}
+.hamburger{
+    grid-area: hamburger;
+    
+}
+.download{
+    grid-area: download;
+}
+
+
+/* ------badges---- */
+
+.column-flex{
+    flex-direction: column;
+}
+.badge-wrapper > i{
+    position:relative;
+
+}
+.badge-wrapper{
+    position: relative;
+}
+.circle{
+    position:absolute;
+    
+    background-color: red;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /*16px;*/
+    
+}
+.circle-for-icon{
+    top:-5px;
+    left:20px;
+}
+.circle-for-text{
+    top:-8px;
+    left:100px;
+}
+.circle-for-lg-text{
+    width:30px;
+    height:30px;
+    font-size: 2rem;
+    top:-15px;
+    left:180px;
+}
+
+.badge-wrapper>button{
+    background: var(--blue);
+    color:white;
+}
+.circle-for-btn{
+    top:-14px;
+    left:70px;
+}
+.circle-for-hide-btn{
+    top:-14px;
+    left:50px;
+
+}
+
+
 
