@@ -461,26 +461,18 @@ ul{
 
 /* chips */
 
-
-.simple-chips > span{
+span{
     background: var(--off-white);
-    padding:.5rem 1.5rem;
-    margin:1rem;
+    padding:.2rem 1rem;
     border-radius: 40px;
 }
-
-.removable-chip > span{
-    margin:1rem;
-    padding:.5rem .8rem;
-    border-radius: 40px;
-}
-.removable-chip > span > button{
+.removable-chip>button{
     background: inherit;
     padding:.3rem .5rem;
     border-radius: 50%;
     font-size: small;
 }
-.removable-chip > span > button:hover{
+.removable-chip > button:hover{
     background-color: var(--light-grey);
 }
 #html-chip{
@@ -491,6 +483,9 @@ ul{
 }
 #js-chip{
     background-color: #ca8a04;
+}
+#react-chip{
+    background-color: #61DBFB;
 }
 
 
