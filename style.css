@@ -28,6 +28,13 @@ body{
     background-color:var(--light-grey) ;
     
 }
+
+.x-overlay{
+    z-index:99;
+}
+.overlay{
+    z-index:9;
+}
 /* ------------Cards------------------- */
 .card{
     box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
@@ -323,9 +330,7 @@ ul{
 
 }
 /* -----------snack bars-------------- */
-.overlay{
-    z-index:99;
-}
+
 
 .simple-snack-bar{
     background: var(--grey);
@@ -395,8 +400,13 @@ ul{
 
 /*  second dialog */
 
+.dialog{
+    margin:1rem;
+}
+
 .dialog ul{
     list-style: none;
+
 }
 .dialog> h2{
     margin:.4rem 2rem;
@@ -419,7 +429,7 @@ ul{
     height: 7.5rem;
     display: flex;
     overflow-y: scroll;
-    color:var(--dark-grey)
+    color:var(--dark-grey);
 }
 .dialog-middle > label{
     padding:.5rem 1rem;
@@ -430,6 +440,7 @@ ul{
 }
 
 /* ------------tabs------------ */
+
 .fixed-tab , .scrollable-tab{
     background-color: var(--off-white);
     padding:.5rem;
@@ -440,16 +451,15 @@ ul{
     border-bottom:2px solid var(--blue);
 }
 .scrollable-tab{
-  overflow-x: auto;
-
-  width:250px;
-display: flex;
-flex-wrap: nowrap;
+    width:400px;
+    overflow: auto;
+    white-space: nowrap;
 }
 .scrollable-tab > button{
-    width:500px;
-    
+    width:100px;
+
 }
+
 
 
 
