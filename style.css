@@ -168,9 +168,6 @@ button:hover{
    
     padding:1rem;
 }
-.titles{
-    
-}
 .titles>h2{
     font-size: 1.7rem;
 }
@@ -370,9 +367,90 @@ ul{
 }
 .baseline{
     display: none;
-    position:absolute;
-    bottom:0
+    position:fixed;
+    bottom:0;
 }
+
+/* ------------------ Dialogs ---------- */
+
+.dialog{
+    width:240px;
+    height:165px;
+    background: var(--off-white);
+    border-radius:10px;
+}
+.dialog-upper{
+    height:100px;
+    margin-left:1.5rem;
+    margin-top:1.5rem;
+}
+.dialog-upper > h2{
+    padding-bottom: 1rem;
+}
+.dialog-lower{
+    display:flex;
+    justify-content: end;
+   
+}
+
+/*  second dialog */
+
+.dialog ul{
+    list-style: none;
+}
+.dialog> h2{
+    margin:.4rem 2rem;
+    font-size: larger;
+    font-weight: bold;
+
+}
+.dialog ul li{
+    padding:.4rem 1.5rem;
+    font-size: large;
+} 
+.dialog ul li:hover{
+    background-color: var(--blue);
+    color:white;
+}
+.confirmation{
+    height:200px;
+}
+.dialog-middle {
+    height: 7.5rem;
+    display: flex;
+    overflow-y: scroll;
+    color:var(--dark-grey)
+}
+.dialog-middle > label{
+    padding:.5rem 1rem;
+    
+}
+.dialog-middle > label  input{
+    margin-right:.5rem;
+}
+
+/* ------------tabs------------ */
+.fixed-tab , .scrollable-tab{
+    background-color: var(--off-white);
+    padding:.5rem;
+}
+
+.active-tab-item{
+    border-radius: 0px;
+    border-bottom:2px solid var(--blue);
+}
+.scrollable-tab{
+  overflow-x: auto;
+
+  width:250px;
+display: flex;
+flex-wrap: nowrap;
+}
+.scrollable-tab > button{
+    width:500px;
+    
+}
+
 
 
 

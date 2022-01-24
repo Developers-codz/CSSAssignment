@@ -1,3 +1,5 @@
+//  drawer
+
 const listNode = document.querySelectorAll("li")
 listNode.forEach(item1 =>{
     item1.addEventListener("click",()=>{
@@ -25,7 +27,7 @@ hideBtn.addEventListener("click",()=>{
     else
      {
        
-        badge.style.display="inline";  
+        badge.style.display="block";  
      }  
 })
 
