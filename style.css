@@ -8,6 +8,10 @@
     --light-grey:#f7f7f7;
     --blue:#6200ee;
     --off-white:rgb(253, 252, 252);
+    --orange:rgb(253, 167, 6);
+    --indigo:#4b7ae0;
+    --brown:#ca8a04;
+    --light-blue:#61DBFB;
     
 }
 body{
@@ -461,7 +465,7 @@ ul{
 
 /* chips */
 
-span{
+.chip >span{
     background: var(--off-white);
     padding:.2rem 1rem;
     border-radius: 40px;
@@ -476,22 +480,15 @@ span{
     background-color: var(--light-grey);
 }
 #html-chip{
-    background: orange;
+    background: var(--orange);
 }
 #css-chip{
-    background-color: rgb(159, 159, 219);
+    background-color: var(--indigo);
 }
 #js-chip{
-    background-color: #ca8a04;
+    background-color: var(--brown);
 }
 #react-chip{
-    background-color: #61DBFB;
+    background-color: var(--light-blue);
 }
-
-
-
-
-
-
-
 
