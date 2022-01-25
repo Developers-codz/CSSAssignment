@@ -1,0 +1,55 @@
+/* ------badges---- */
+
+.column-flex{
+    flex-direction: column;
+}
+.badge-wrapper > i{
+    position:relative;
+
+}
+.badge-wrapper{
+    position: relative;
+}
+.circle{
+    position:absolute;
+    
+    background-color: red;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /*16px;*/
+    
+}
+.circle-for-icon{
+    top:-5px;
+    left:20px;
+}
+.circle-for-text{
+    top:-8px;
+    left:100px;
+}
+.circle-for-lg-text{
+    width:30px;
+    height:30px;
+    font-size: 2rem;
+    top:-15px;
+    left:180px;
+}
+
+.badge-wrapper>button{
+    background: var(--blue);
+    color:white;
+}
+.circle-for-btn{
+    top:-14px;
+    left:70px;
+}
+.circle-for-hide-btn{
+    top:-14px;
+    left:50px;
+
+}

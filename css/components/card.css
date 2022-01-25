@@ -1,0 +1,126 @@
+/* ------------Cards------------------- */
+.card{
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    border-radius: 10px ;
+    background-color: var(--off-white);
+    margin:1rem;
+ 
+}
+/* small card with side image */
+.sm-card{
+    width:350px;
+    height:170px;
+  
+}
+.sm-card-upper{
+    display:flex;
+    justify-content: center;
+    align-items: start;
+}
+.sm-img{
+    width:120px;
+    height:120px;
+    flex-grow: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-detail{
+   flex-grow:2;
+    display:flex;
+    flex-direction: column;
+    margin-left:1.5rem;
+    margin-top:1.5rem;
+}
+.sm-card-upper:hover{
+    background-color: var(--light-grey);
+}
+h2{
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: .0125em;
+}
+small{
+    color:var(--grey)
+}
+
+.card-lower{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:.5rem;
+}
+button{
+    border:none;
+    background-color:var(--off-white);
+    color:var(--blue);
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: .0225em;
+    padding:.5rem .8rem;
+    border-radius: 5px;
+    text-align: center;
+
+}
+button:hover{
+    background-color: var(--light-grey);
+    cursor: pointer;
+    
+}
+.icon-btn{
+    text-align: center;
+    width:40px;
+    height:40px;
+    color:var(--grey);
+    border-radius: 45%;
+    font-size: large;
+}
+
+
+
+/* large card  with full image*/
+
+.lg-card{
+    width: 350px;
+    height: 312px;
+}
+.bg-img-wrapper{
+    width:350px;
+    height:196px;
+    background: url("https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg");
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    position: relative;
+    
+}
+.text-wrapper{  
+    padding:.5rem .5rem;
+    letter-spacing: .0178571429em;
+    color:var(--grey);
+    font: bolder;
+}
+.lg-card-upper:hover{
+    background: var(--light-grey);
+    
+    
+}
+.bg-img-wrapper > h2, .bg-img-wrapper >small{
+    color:var(--off-white);
+    position: absolute;
+    left:0;
+    font-weight:500 ;
+    
+}
+.bg-img-wrapper h2{
+    bottom:10px;
+     margin-bottom: 1rem;
+     margin-left: 1rem;
+     font-size: 1.5rem;
+
+}
+.bg-img-wrapper small{
+    bottom:5px; 
+    margin-left: 1rem;
+    font-size: 1rem;
+     
+
+}

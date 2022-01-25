@@ -1,0 +1,15 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --grey:rgba(0,0,0,.54);
+    --light-grey:#f7f7f7;
+    --blue:#6200ee;
+    --off-white:rgb(253, 252, 252);
+    --orange:rgb(253, 167, 6);
+    --indigo:#4b7ae0;
+    --brown:#ca8a04;
+    --light-blue:#61DBFB;
+}

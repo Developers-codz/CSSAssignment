@@ -1,0 +1,26 @@
+.chip >span{
+    background: var(--off-white);
+    padding:.2rem 1rem;
+    border-radius: 40px;
+}
+.removable-chip>button{
+    background: inherit;
+    padding:.3rem .5rem;
+    border-radius: 50%;
+    font-size: small;
+}
+.removable-chip > button:hover{
+    background-color: var(--light-grey);
+}
+#html-chip{
+    background: var(--orange);
+}
+#css-chip{
+    background-color: var(--indigo);
+}
+#js-chip{
+    background-color: var(--brown);
+}
+#react-chip{
+    background-color: var(--light-blue);
+}

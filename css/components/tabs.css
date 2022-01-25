@@ -1,0 +1,17 @@
+.fixed-tab , .scrollable-tab{
+    background-color: var(--off-white);
+    padding:.5rem;
+}
+
+.active-tab-item{
+    border-radius: 0px;
+    border-bottom:2px solid var(--blue);
+}
+.scrollable-tab{
+    width:400px;
+    overflow: auto;
+    white-space: nowrap;
+}
+.scrollable-tab > button{
+    width:100px;
+} 

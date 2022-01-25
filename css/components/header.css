@@ -1,0 +1,64 @@
+/* using grids */
+
+.long-nav{
+    width:600px;
+    padding:1rem;
+    background-color: var(--off-white);
+    display:grid;
+    grid-template-areas:
+    "button place place place ------ ------ ----- icons icons icons";
+    
+    
+}
+
+
+@media only screen and(max-width:500px){
+    
+    .long-nav{
+        
+        grid-template-areas:
+        "button place"
+        "-----  icons";
+    }
+}
+
+.long-nav>button{
+    grid-area: button;
+}
+
+.long-nav>h2{
+    grid-area: place;
+    margin-top:.3rem;
+    margin-left: 1rem;
+}
+.right-panel{
+    grid-area:icons;
+    margin-left: auto;   
+}
+
+
+/* -----short nav------ */
+
+.short-nav{
+    display:grid;
+    width:150px;
+    border-bottom-right-radius:20px ;
+    background: var(--blue);
+    grid-template-areas: "hamburger download";
+    padding:1rem .2rem;
+}
+.short-nav > button{
+    background: var(--blue);
+    color:white;
+    margin-right:auto;
+}
+.short-nav > button:hover{
+  background: #8d4fe2b9;
+}
+.hamburger{
+    grid-area: hamburger;
+    
+}
+.download{
+    grid-area: download;
+}
